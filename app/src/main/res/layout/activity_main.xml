@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#86DB8A"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:text="Length"
+    android:textSize="18sp"
+    android:textStyle="italic|bold"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:textColor="#000"
+    android:layout_height="wrap_content">
+
+
+</TextView>
+
+
+    <EditText
+        android:id="@+id/lengthET"
+        android:layout_width="match_parent"
+       android:background="#F0EAEA"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:hint="Enter The Value"
+        android:backgroundTint="#E0DBDB"
+        android:layout_height="wrap_content">
+    </EditText>
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/meterTokmRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:text="Meter To Kilometer" />
+
+        <RadioButton
+            android:id="@+id/kmTometerRB"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometer To Merter" />
+
+    </RadioGroup>
+
+
+
+
+    <Button
+        android:id="@+id/convertBtnLength"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Weight"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/weightET"
+         android:layout_width="match_parent"
+        android:background="#F0EAEA"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:hint="Enter The Value"
+        android:backgroundTint="#E0DBDB"
+        android:layout_height="wrap_content">
+    </EditText>
+    <RadioGroup
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/kilogramTogramRB"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilogram To Gram" />
+       <RadioButton
+        android:id="@+id/gramTokilogramRB"
+        android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gram To Kilogram" />
+    </RadioGroup>
+
+    <Button
+         android:id="@+id/convertBtnweight"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/timeET"
+        android:layout_width="match_parent"
+        android:background="#F0EAEA"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:hint="Enter The Value"
+        android:backgroundTint="#E0DBDB"
+        android:layout_height="wrap_content">
+    </EditText>
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/secondTominuteRB"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second To Minute" />
+        <RadioButton
+            android:id="@+id/minutrTosecondRB"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minute To Second" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convertBtntime"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false" />
+</LinearLayout>
